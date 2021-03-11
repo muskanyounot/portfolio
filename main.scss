@@ -54,6 +54,14 @@ body{
   height:2110px;
   
 }
+
+// class="rectangle--1"
+
+// .rectangle {
+//   &--1 {
+
+//   }
+// }
 .vector {
   position:absolute;
   z-index: 2;
@@ -83,10 +91,12 @@ nav{
   justify-content: space-between;
   align-items: center;
 }
+
 nav:hover {
   width: 90vw;
 }
-.menuIcon{
+
+.menuIcon {
   margin:25px;
   font-size: 50px;
 }
@@ -180,7 +190,7 @@ nav:hover {
   0%   {background-color:$pink; }
   25%  {background-color:$purple; }
   50%  {background-color:$pink;}
-  75%  {background-color:$purple;}
+  75%  {background-color:$purple;}  
   100% {background-color:$pink;}
   }
 }
@@ -189,7 +199,7 @@ nav:hover {
   white-space: nowrap;
   overflow: hidden;  
   animation: animated-text 4s steps(29,end) 1 normal both,
-             animated-cursor 600ms steps(29,end) infinite;
+               animated-cursor 600ms steps(29,end) infinite;
 }
 @keyframes animated-text{
   from{width: 0;}
