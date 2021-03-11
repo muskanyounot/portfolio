@@ -1,0 +1,204 @@
+$pink: #E86A92;
+$purple:#5B2839;
+$white:#F7F7F9;
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+* {
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+body{
+  position:relative;
+}
+
+.background{
+  aside {
+  section{
+    height:150px;
+    width:100vw;
+      
+  }
+}
+}
+.background{
+  position:absolute;
+  z-index:1;
+}
+.rectangle1{
+  background-color: $pink;
+ 
+}
+.rectangle2{
+  background-color: #95566A;
+  }
+.rectangle3{
+  background-color: $purple;
+ 
+}
+.rectangle4{
+  background-color: #43202B;
+  
+}
+.rectangle5{
+  background-color: #32111C;
+ 
+  height:81px;
+  
+}
+.rectangle6{
+  background-color:$purple;
+  
+  height:2110px;
+  
+}
+.vector {
+  position:absolute;
+  z-index: 2;
+}
+
+nav{
+  position:fixed;
+  z-index:3;
+  margin-top: 10px;
+  margin-left:20px;
+  height:8vh;
+  border-radius:40px;
+  color:$white;
+  background-color: $pink ;
+  position:absolute;
+  width:5vw;
+  transition: width 2s ease-out;
+
+  p {
+    padding:20px;
+  }
+
+  font-family: 'Cinzel', serif;
+  font-size: 30px;
+
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav:hover {
+  width: 90vw;
+}
+.menuIcon{
+  margin:25px;
+  font-size: 50px;
+}
+
+.landingPg-container {
+  position:absolute;
+  z-index: 3;
+  
+  h1{
+      position: absolute;
+      width: 408px;
+      height: 129px;
+      left: 584px;
+      top: 372px;
+
+      font-family: Cinzel;
+      font-weight: bold;
+      font-size: 96px;
+      line-height: 129px;
+      background-image: url('background.jpg');
+      background-size:100% 100%;
+      color:transparent;
+      -webkit-background-clip:text;
+  }
+  h2{
+    position: absolute;
+    width: 283px;
+    height: 114px;
+    left: 982px;
+    top: 455px;
+    
+    font-family: Cinzel;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 85px;
+    line-height: 114px;
+   
+    color: $white;
+  }
+  p{
+    position: absolute;
+    width: 369px;
+    height: 55px;
+    top:473px;
+    left:594px;
+
+    font-family: 'Clicker Script', cursive;
+    font-size: 42px;
+    line-height: 55px;
+
+    color: $purple;
+
+  }
+  img{
+    position: absolute;
+    width: 34.93px;
+    height: 33.02px;
+    top:479px;
+    left:987px;
+  }
+  section{
+    position: absolute;
+  width: 452px;
+  height: 88px;
+  left: 892px;
+  top: 844px;
+
+  background: $pink;
+  opacity: 0.75;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  animation-name: viewPortfolio;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay:5s;
+    
+  p{
+    position:absolute;
+    width: 400px;
+    height: 62px;
+    top:15px;
+    left:32px;
+    
+    color:$white;
+    font-family: Cinzel;
+    font-size: 46px;
+    line-height: 62px;
+  }
+  }
+  @keyframes viewPortfolio {
+  0%   {background-color:$pink; }
+  25%  {background-color:$purple; }
+  50%  {background-color:$pink;}
+  75%  {background-color:$purple;}
+  100% {background-color:$pink;}
+  }
+}
+.typing{
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;  
+  animation: animated-text 4s steps(29,end) 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 369px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: $pink;}
+  to{border-right-color: transparent;}
+}
